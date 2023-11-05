@@ -4,6 +4,7 @@
 <ul>
     <li>lin_reg.py: Basic linear regression demo, my first script on this repo.</li>
     <li>data.csv: Data set for lin_reg.py.</li>
+    <li>iris_ml.py: Model of iris dataset, first time using pandas and sklearn</li>
 </ul>
 
 <h3>About these projects:</h3>
