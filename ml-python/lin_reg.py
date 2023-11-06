@@ -28,7 +28,7 @@ def error_for_line(points, m, b):
 
 # Main function, runs iters iterations of gradient_descent()
 def run():
-    points = np.genfromtxt("data.csv", delimiter=',') # nparray of nparrays
+    points = np.genfromtxt("data/data.csv", delimiter=',') # nparray of nparrays
     for point in points:
         plt.plot(point[0], point[1], 'o')
     m = b = 0
