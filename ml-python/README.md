@@ -2,8 +2,8 @@
 
 <h3>Files included:</h3>
 <ul>
+    <li>data: Directory for all data files used in these scripts</li>
     <li>lin_reg.py: Basic linear regression demo, my first script on this repo.</li>
-    <li>data.csv: Data set for lin_reg.py.</li>
     <li>iris_ml.py: Model of iris dataset, first time using pandas and sklearn</li>
 </ul>
 
