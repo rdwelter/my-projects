@@ -5,16 +5,39 @@
 
 class Position{
 private:
-    uint64_t board;
+    /*
+    Private variables for each Position object
+
+    @var red_pos: Bit-string representing positions of red tokens
+    @var yellow_pos: Bit-string representing positions of yellow tokens
+    @var turn: 0 if red's turn in current position, 1 if yellow's turn
+    */
+    uint64_t red_pos;
+    uint64_t yellow_pos;
     int turn;
 public:
+    /*
+    Default constructor for Position
+    Starts game with empty board on red's turn
+    */
+    Position();
+
+    /*
+    Constructor for Position with specific board configuration
+
+    @param r: Represents where red tokens are on the board
+    @param y: Represents where yellow tokens are on the board
+    @param t: 0 if red's turn, 1 if yellow's turn
+    */
+    Position(uint64_t r, uint64_t y, int t);
+
     /*
     Checks if a column is playable
 
     @param col: index of column being checked
     @return true if column is not full, false otherwise
     */
-    bool canPlay(int col) const;
+    bool can_play(int col) const;
 
     /*
     Plays a token for the current player
