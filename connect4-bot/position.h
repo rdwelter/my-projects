@@ -30,4 +30,13 @@ public:
     @return true if playing at col would win, false otherwise
     */
     bool winning_move(int col) const;
+
+    /*
+    Evaluates if playing the move at col results in
+    the next player winning the game
+
+    @param col: index of column of potential move
+    @return true if playing at col would lose, false otherwise
+    */
+    bool losing_move(int col) const;
 };
