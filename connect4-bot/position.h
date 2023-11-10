@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include <string>
 
 #define WIDTH 7
 #define HEIGHT 6
@@ -62,4 +63,11 @@ public:
     @return true if playing at col would lose, false otherwise
     */
     bool losing_move(int col) const;
+
+    /*
+    Generates string representation of Connect 4 position
+
+    @return the string representation of the position
+    */
+    std::string to_string() const;
 };
