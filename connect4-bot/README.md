@@ -5,6 +5,7 @@
 <ul>
     <li>position.cpp: Implementation of position object for the board</li>
     <li>position.h: Interface of position object for the board</li>
+    <li>main.py: Holds graphical interface for connect four game - currently playable with two human players</li>
 </ul>
 
 <h3>About this project</h3>
